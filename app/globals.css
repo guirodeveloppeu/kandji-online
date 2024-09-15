@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #0a0a0a;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.myLink {
+  @apply  transition-all relative after:absolute after:bottom-0 after:right-full after:bg-orange-500 after:z-10 after:w-full after:h-[2px] overflow-hidden hover:after:translate-x-full cursor-pointer after:duration-300 hover:text-orange-500 ;
+}
