@@ -14,8 +14,19 @@ function Last() {
         <div className="w-1 h-7 bg-orange-500 transform -skew-x-12"></div>
       </div>
 
-      <div className="flex justify-center space-x-5 bg-slate-400 p-4">
-        <div className="flex items-center w-full max-w-7xl">
+      <div className="flex justify-center space-x-5 bg-slate-400 p-4   relative  overflow-hidden">
+
+                {/* Background skewed divs */}
+                <div className="absolute inset-0 flex">
+          <div className="w-1/3 h-full  transform skew-x-12"></div>
+          <div className="w-1/3 h-full bg-blue-700  transform -skew-x-12"></div>
+          <div className="w-1/3 h-full  transform skew-x-12"></div>
+        </div>
+
+
+
+
+        <div className="relative z-10 flex items-center w-full max-w-7xl">
           {/* First main div - Images */}
           <div className="w-2/3 flex items-center">
             {/* Skewed Terra image */}
@@ -45,7 +56,7 @@ function Last() {
               <li>Système 4x4 avancé</li>
               <li>Intérieur spacieux avec des matériaux haut de gamme</li>
               <li>Système d&apos;infodivertissement de pointe</li>
-              <li>Excellent fuel efficiency for its class</li>
+              <li>Excellente efficacité énergétique pour sa catégorie</li>
             </ul>
             <button className="mt-6 bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-300">
               Voir +

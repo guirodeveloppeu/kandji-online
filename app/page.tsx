@@ -1,3 +1,4 @@
+import Backgrou from "@/components/Backgrou";
 import Globals from "@/components/Globals";
 import Hero from "@/components/Hero"
 import Last from "@/components/Last";
@@ -12,6 +13,7 @@ export default function Home() {
      <Tendence />
      <Parallax />
      <Globals />
+     <Backgrou />
     </div>
   );
 }

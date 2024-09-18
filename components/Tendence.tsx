@@ -2,10 +2,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import car1 from '@/app/img/joyt.jpg'
+import car1 from '@/app/img/joy01t1.jpg'
 import car2 from '@/app/img/k3t.jpg'
+
 import car3 from '@/app/img/rl7t.jpg'
 import car4 from '@/app/img/rl9t.jpg'
+
 import joyint1 from '@/app/img/joyint1.jpg'
 import joyint2 from '@/app/img/joyint2.jpg'
 

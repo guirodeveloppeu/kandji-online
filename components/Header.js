@@ -47,8 +47,8 @@ function Header() {
 						<Image
 							src={logo}
 							alt="Logo"
-							width={100}
-							height={50}
+							width={150}
+							height={100}
 							className=" cursor-pointer"
 						/>
 					</Link>
