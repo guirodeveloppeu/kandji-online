@@ -4,6 +4,8 @@ import Hero from "@/components/Hero"
 import Last from "@/components/Last";
 import Parallax from "@/components/Parallax";
 import Tendence from "@/components/Tendence";
+//import Tester from "@/components/Tester";
+
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
      <Parallax />
      <Globals />
      <Backgrou />
+
     </div>
   );
 }

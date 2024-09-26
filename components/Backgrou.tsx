@@ -4,7 +4,7 @@ import terra from "@/app/img/terralord.png"
 function Backgrou() {
   return (
     <div>
-      <div className="relative bg-slate-400 flex items-center justify-center overflow-hidden mb-4">
+      <div className="relative bg-slate-400 flex items-center justify-center overflow-hidden mt-20 mb-10">
         {/* Background skewed divs */}
         <div className="absolute inset-0 flex">
           <div className="w-1/3 h-full bg-transparent transform  -skew-x-12"></div>

@@ -14,12 +14,12 @@ html {
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #a7a29d;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #a7a29d;
     --foreground: #ededed;
   }
 }
@@ -31,5 +31,29 @@ body {
 }
 
 .myLink {
+  @apply  inline-block px-6 py-2 uppercase hover:bg-primary duration-200 rounded-md hover:shadow-[0px_0px_20px_8px_#d2e6ff] ;
+}
+
+
+.myLink1 {
   @apply  transition-all relative after:absolute after:bottom-0 after:right-full after:bg-orange-500 after:z-10 after:w-full after:h-[2px] overflow-hidden hover:after:translate-x-full cursor-pointer after:duration-300 hover:text-orange-500 ;
+}
+
+
+@layer base{
+  .text-outline{
+    -webkit-text-stroke: 2px white;
+  }
+}
+
+@layer components{
+  .outline-btn{
+    @apply border-[3px] rounded-xl px-6 py-2 
+  }
+  .rounded-icons{
+    @apply h-[30px] w-[30px] flex items-center cursor-pointer justify-center bg-white/30 rounded-full p-2  hover:scale-110 duration-200;
+  }
+  .glowing-shadow{
+    @apply shadow-[0px_0px_40px_10px_#d2e6ff]
+  }
 }

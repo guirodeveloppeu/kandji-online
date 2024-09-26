@@ -8,10 +8,12 @@ import Link from "next/link";
 function Header() {
 	const [scrollY, setScrollY] = useState(0);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [textColor, setTextColor] = useState("white");
 
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrollY(window.scrollY);
+			setTextColor("#ea580c");
 		};
 
 		window.addEventListener("scroll", handleScroll);
@@ -23,11 +25,12 @@ function Header() {
 
 	return (
 		<header
+		style={{ color: `${textColor}` }}
 			className={`fixed top-0 left-0 w-full transition-colors duration-300 text-white z-50 ${
-				scrollY >= 90 ? "bg-white text-orange-600" : ""
+				scrollY >= 90 ? "bg-white  "  : ""
 			}`}>
 			{/* large screen */}
-			<div className="container mx-auto px-4 py-4 hidden  lg:flex justify-between items-center uppercase text-orange-800 ">
+			<div className="container mx-auto px-4 py-4 hidden  lg:flex justify-between items-center uppercase  ">
 				<div className="flex space-x-6">
 					<Link href="/suv" className="myLink">
 						SUV
@@ -47,8 +50,8 @@ function Header() {
 						<Image
 							src={logo}
 							alt="Logo"
-							width={150}
-							height={100}
+							width={100}
+							height={50}
 							className=" cursor-pointer"
 						/>
 					</Link>
